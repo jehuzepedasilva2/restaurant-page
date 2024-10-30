@@ -9,8 +9,8 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'), // the name of folder, by convention its called dist (distribution), not sure what resolve(..) does
     clean: true, // saves in dist and "deletes old files and replaces with current (autosave and clean up?)"
   },
-  devtool: "eval-source-map",
-  devServer: {
+  devtool: "eval-source-map", // helps in matching up error msgs to correct files and lines from our development code (src)
+  devServer: { // by default webpack will only watch changes of bundled .js files and ignore html, this changes that.
     watchFiles: ["./src/template.html"],
   },
   plugins: [
@@ -27,3 +27,13 @@ module.exports = {
     ],
   },
 }
+
+// run npm init -y or npm init to generate package.json file
+// --save-dev writes to the package.json file and updates dependencies.
+// npm install --save-dev webpack webpack-cli
+// --> this installs webpack and webpack command line interface (npx webpack) so that we can bundle files
+// npm install --save-dev html-webpack-plugin
+// --> Since HTML isn't js webpack cant just bundle it straight away, this install helps with that
+// npm install --save-dev style-loader css-loader
+// --> css-loader will read any CSS files we import in a JavaScript file and store the result in a string. 
+// style-loader then takes that string and actually adds the JavaScript code that will apply those styles to the page. Therefore, we need both.
