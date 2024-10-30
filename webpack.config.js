@@ -1,4 +1,5 @@
 const path = require('path');
+const HtmlWebpackPlugin = require("html-webpack-plugin"); //not sure what either of these do?
 
 module.exports = {
   mode: 'development', // there is production, development, and none
@@ -8,4 +9,9 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'), // the name of folder, by convention its called dist (distribution), not sure what resolve(..) does
     clean: true, // saves in dist and "deletes old files and replaces with current (autosave and clean up?)"
   },
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: "./src/template.html", // the name of our html file
+    }),
+  ],
 }
