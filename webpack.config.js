@@ -9,6 +9,10 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'), // the name of folder, by convention its called dist (distribution), not sure what resolve(..) does
     clean: true, // saves in dist and "deletes old files and replaces with current (autosave and clean up?)"
   },
+  devtool: "eval-source-map",
+  devServer: {
+    watchFiles: ["./src/template.html"],
+  },
   plugins: [
     new HtmlWebpackPlugin({
       template: "./src/template.html", // the name of our html file
