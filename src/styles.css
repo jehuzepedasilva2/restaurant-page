@@ -1,3 +1,37 @@
-body {
-  background-image: url(../imgs-tak/aztec-pattern.jpg);
+@font-face {
+  font-family: 'kablammoregular';
+  src: url('../fonts/font-kablammo/kablammo-regular-variablefont_morf-webfont.woff2') format('woff2'),
+       url('../fonts/font-kablammo/kablammo-regular-variablefont_morf-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
 }
+
+* {
+  padding: 0; 
+  margin: 0;
+  font-family: "kablammoregular";
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: orange;
+  background-image: url('../imgs/aztec-pattern.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+header {
+  padding: 10px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-btn {
+  font-size: 1.5rem;
+}
+
