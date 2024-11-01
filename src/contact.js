@@ -18,11 +18,12 @@ function contactPage() {
 
   const phoneNumber = document.createElement("h3");
   phoneNumber.classList.add("phone-number");
-  phoneNumber.textContent = "(777) 777-7777";
+  phoneNumber.innerHTML = "Phone Number:<br>(777) 777-7777";
 
   const hours = document.createElement("p");
   hours.classList.add("hours");
   hours.innerHTML = `
+  Hours:<br>
   Sunday - Monday: Closed<br>
   Tuesday - Wednesday: 7:00 pm - 9:00 pm<br>
   Thursday - Friday: 11:00 am - 2:30 pm<br>

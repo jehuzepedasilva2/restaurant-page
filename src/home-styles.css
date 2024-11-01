@@ -64,6 +64,7 @@ nav {
   transition: transform 0.3s ease;
   padding: 6px;
   border-radius: 10px;
+  cursor: pointer;
 }
 
 .nav-btn:hover {
