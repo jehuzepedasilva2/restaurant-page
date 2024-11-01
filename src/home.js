@@ -1,4 +1,5 @@
 import CachedDOM from "./cachedDOM"; 
+import './home-styles.css';
 
 export default function homePage() { 
   const title = document.createElement("h1");

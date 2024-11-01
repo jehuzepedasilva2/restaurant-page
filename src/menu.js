@@ -3,6 +3,7 @@ import tamal from '../imgs/tamal.jpg';
 import fajitas from '../imgs/fajitas.jpeg';
 import carnitas from '../imgs/carnitas.jpg';
 import flan from '../imgs/flan.jpg';
+import './menu-styles.css';
 
 function createDish(imagePath, svgHTML="", title, description, price, reverse=false) {
   const contentContainer = CachedDOM.getContentContainer();

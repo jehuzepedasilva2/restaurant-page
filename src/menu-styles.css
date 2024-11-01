@@ -36,12 +36,12 @@ body {
 }
 
 header {
+  flex: 1;
   position: sticky;
   top: 0px;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex: 1;
   padding: 10px;
   background-color: black;
 }
@@ -64,6 +64,8 @@ nav {
   color: white;
   background: none;
   transition: transform 0.3s ease;
+  padding: 6px;
+  border-radius: 10px;
 }
 
 .nav-btn:hover {
@@ -71,7 +73,7 @@ nav {
 }
 
 #content {
-  flex: 8;
+  flex: 100;
   padding: 2rem;
   display: flex;
   flex-direction: column;
@@ -88,7 +90,7 @@ nav {
 .dish-container img {
   width: 200px;
   height: 200px;
-  border: 1px solid white;
+  border: 1px solid #ed3d9e;
   border-radius: 10px;
 }
 

@@ -1,4 +1,5 @@
 import CachedDOM from './cachedDOM.js';
+import './contact-styles.css';
 
 function contactPage() {
   const contentContainer = CachedDOM.getContentContainer();
