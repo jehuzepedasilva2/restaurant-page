@@ -1,0 +1,76 @@
+@font-face {
+  font-family: 'kablammoregular';
+  src: url('../fonts/font-kablammo/kablammo-regular-variablefont_morf-webfont.woff2') format('woff2'),
+       url('../fonts/font-kablammo/kablammo-regular-variablefont_morf-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'action_manregular';
+  src: url('../fonts/font-action-man/action_man-webfont.woff2') format('woff2'),
+       url('../fonts/font-action-man/action_man-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+* {
+  padding: 0; 
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'action_manregular';
+  color: white;
+}
+
+body {
+  background-color: orange;
+  background-image: url('../imgs/aztec-cal.jpg');
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  padding: 10px;
+  background-color: rgb(0 0 0/.6);
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+}
+
+.nav-btn {
+  font-family: 'kablammoregular';
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.5rem;
+  appearance: none;
+  border: none;
+  color: white;
+  background: none;
+  transition: transform 0.3s ease;
+}
+
+.nav-btn:hover {
+  transform: scale(1.1);
+}
+
+#content {
+  flex: 8;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  background-color:  rgb(0 0 0/.6);
+}
